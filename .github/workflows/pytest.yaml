@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      DB_USER: "postgres"
+      DB_USER: "postgres2"
 
     steps:
       - name: Checkout repository
