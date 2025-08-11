@@ -41,4 +41,4 @@ jobs:
         run: echo "time=$(date)" >> $GITHUB_OUTPUT
 
       - name: Print github output
-        run: echo "1つ前のstepの出力は${{ steps.get_time.output.time}}です"
+        run: echo "1つ前のstepの出力は${{ steps.get_time.outputs.time}}です"
