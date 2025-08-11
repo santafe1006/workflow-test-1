@@ -26,6 +26,10 @@ jobs:
       - name: Run pytest
         run: pytest
 
+      - name: Failure Log
+        if: failure()
+        run: echo "1つ前のstepは失敗しました"
+
       - name: Print DB_USER
         run: echo "DB_USER -> ${{ env.DB_USER }}"
 
